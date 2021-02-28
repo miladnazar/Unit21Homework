@@ -1,6 +1,7 @@
 # Unit 21: You sure can attract a crowd!
 
-![crowd](Images/crowd.png)
+# Transaction Details
+![crowd](Images/transaction_detail.png)
 
 ## Background
 
