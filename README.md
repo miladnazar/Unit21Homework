@@ -1,29 +1,28 @@
 # Unit 21: You sure can attract a crowd!
 
-# Transaction Details
-![crowd](Images/transaction_detail.png)
-
 ## Background
 
-Your company has decided to crowdsale their PupperCoin token in order to help fund the network development.
-This network will be used to track the dog breeding activity across the globe in a decentralized way, and allow humans to track the genetic trail of their pets. You have already worked with the necessary legal bodies and have the green light on creating a crowdsale open to the public. However, you are required to enable refunds if the crowdsale is successful and the goal is met, and you are only allowed to raise a maximum of 300 Ether. The crowdsale will run for 24 weeks.
+In this project I'm going to crowdsale my company's PupperCoin token in order to help fund the network development with 300 ETH. The crowdsale will run for 24 weeks to meet this Goal. To make this Token I'll create an ERC20 token that will mint a 'CrowdSale' contract using OpenZeppelin Soldidity Library.
 
-You will need to create an ERC20 token that will be minted through a `Crowdsale` contract that you can leverage from the OpenZeppelin Solidity library.
+This will allow users to send ETH and get back PUP (PupperCoin). This contract will mint the tokens automatically and distribute them to buyers in one transaction.
 
-This crowdsale contract will manage the entire process, allowing users to send ETH and get back PUP (PupperCoin).
-This contract will mint the tokens automatically and distribute them to buyers in one transaction.
+*I will need to add these the following in this contract:*
+1. Crowdsale 
+2. CappedCrowdsale
+3. TimedCrowdsale
+4. RefundableCrowdsale
+5. MintedCrowdsale
 
-It will need to inherit `Crowdsale`, `CappedCrowdsale`, `TimedCrowdsale`, `RefundableCrowdsale`, and `MintedCrowdsale`.
+I will also change my Crypto App network to Kovan or Ropsten testnet in order to get a real-world pre-production test in.
 
-You will conduct the crowdsale on the Kovan or Ropsten testnet in order to get a real-world pre-production test in.
 
-## Instructions
 
-### Creating your project
+### Creating my project
 
-Using Remix, create a file called `PupperCoin.sol` and create a standard `ERC20Mintable` token. Since you're already an expert at this, you can simply use this [starter code](../Starter-Code/PupperCoin.sol).
+Using Remix, I create a file called `PupperCoin.sol` and create a standard `ERC20Mintable` token. I will also create another new contract named `PupperCoinCrowdsale.sol`, and prepare it like a standard crowdsale. After Compiling and Deploying I was able to send the below transaction.
 
-Create a new contract named `PupperCoinCrowdsale.sol`, and prepare it like a standard crowdsale.
+# Transaction Details
+![crowd](Images/transaction_detail.png)
 
 ### Designing the contracts
 
